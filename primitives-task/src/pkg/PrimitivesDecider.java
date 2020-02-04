@@ -23,7 +23,7 @@ public class PrimitivesDecider {
             result = num + " can't be fitted anywhere";
 
             Long.parseLong(num);
-            result = num + "can be fitted in:\n";
+            result = num + " can be fitted in:\n";
             sortedTypes = "long";
 
             Integer.parseInt(num);

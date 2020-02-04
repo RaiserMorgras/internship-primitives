@@ -48,9 +48,7 @@ public class TestCases {
 
         String num = "213333333333333333333333333333333333";
         pd.setNum(num);
-        String expected = num + " can be fitted in:\n" +
-                "int\n" +
-                "long";
+        String expected = num + " can't be fitted anywhere";
         assertEquals(expected, pd.decide());
     }
 
@@ -60,7 +58,6 @@ public class TestCases {
         String num = "-100000000000000";
         pd.setNum(num);
         String expected = num + " can be fitted in:\n" +
-                "int\n" +
                 "long";
         assertEquals(expected, pd.decide());
     }
